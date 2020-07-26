@@ -7,3 +7,6 @@ This is a simple Swift Sudoku app that handle the following:
 - Algorithmic resolution of the problem (Depth-first search)
 
 
+<img src="./solution.png" width="400" height="900">
+
+
