@@ -1,0 +1,29 @@
+//
+//  GridViewController.swift
+//  Sudoku
+//
+//  Created by Guillaume Guy on 7/12/20.
+//  Copyright © 2020 Guillaume Guy. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class GridViewController : UICollectionViewController {
+
+
+    convenience override init() {
+        var layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSizeMake(10, 10)
+        // Setting the space between cells
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
+        return (self.init(collectionViewLayout: layout))
+    }
+
+    override func viewDidLoad() {
+        
+        self.collectionView.backgroundColor = UIColor.orangeColor()
+    }
+
+}
